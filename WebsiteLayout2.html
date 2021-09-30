@@ -1,0 +1,86 @@
+<!doctype html>
+<title>Website Layout 2</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1"><strong>Navigation</strong>
+  <p id = "p1">
+      <ul>
+          <li><i>Hello</i></li>
+          <li><i>Hi</i></li>
+          <li><i>Namaste</i></li>
+          <li><i>How can we help you?</i></li>
+      </ul>
+  </p>
+</nav>
+  <div class="col-2">
+  	<header><strong>Website Layout 2</strong></header>
+    <main class="content">
+    <article>
+        <h3><strong>Random Article</strong></h3>
+        <p>
+            As I sit in my room late at night, staring at the computer screen, 
+            I decide it would be a good idea to create this text. There isn't 
+            much meaning to it, other than to get some simple practice. A lot 
+            of the texts that have been created are rather short, and don't 
+            give a good representation of actual typing speed and accuracy. 
+            They lack the length to gauge where your strengths and weaknesses 
+            are when typing.
+        </p>
+    </article>
+    <aside><strong>How to get rid of boredom?</strong>
+    <p>
+        <ol>
+            <li>Try something new</li>
+            <li>Connect with others</li>
+            <li>Take a Nap</li>
+            <li>Play board games</li>
+            <li>Volunteer</li>
+        </ol>
+    </p>
+    </aside>
+    </main>
+  	<footer><strong>Footer</strong>
+      <p>
+          Thank you for seeing this webpage. For more info visit:<a href="https://theconversation.com/6-things-you-can-do-to-cope-with-boredom-at-a-time-of-social-distancing-134734">HERE</a> 
+      </p>
+    </footer>
+  </div>
+</body>
